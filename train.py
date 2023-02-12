@@ -36,7 +36,7 @@ image_files = [f for f in glob.glob(args.dataset + "/**/*", recursive=True) if n
 random.seed(42)
 random.shuffle(image_files)
 
-
+#Создание групп
 for img in image_files:
 	image = cv2.imread(img)
 	image = cv2.resize(image, (img_dims[0],img_dims[1]))
